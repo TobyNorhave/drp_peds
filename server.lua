@@ -1,0 +1,5 @@
+--RegisterNetEvent("DRP_Peds:InitAll")
+--AddEventHandler("DRP_Peds:InitAll", function()
+    --local peds = DRPPeds.PedLoc
+    --TriggerClientEvent("DRP_Peds:Init", source, peds)
+--end)
