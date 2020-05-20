@@ -7,10 +7,6 @@ AddEventHandler("DRP_Peds:Init", function(peds)
     spawnPeds(peds)
 end)
 
-function deleteOldPeds()
-
-end
-
 function spawnPeds(peds)
     for a = 1, #peds, 1 do
         local lmodel = GetHashKey(peds[a].model)
@@ -24,12 +20,7 @@ function spawnPeds(peds)
         FreezeEntityPosition(lPed, true)
         SetBlockingOfNonTemporaryEvents(lPed, true)
         SetAmbientVoiceName(lPed, peds[a].voice)
-        if peds[a].dict ~= nil then
-            -- loadAnimDict("mini@strip_club@idles@bouncer@base")
-            -- TaskPlayAnim(lPed, peds[a].dict, peds[a].anim, 8.0, 0.0, -1, 1, 0, 0, 0, 0)
-        else
-            TaskStartScenarioInPlace(lPed, "WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT", 0, 0)
-        end
+        TaskStartScenarioInPlace(lPed, "WORLD_HUMAN_STAND_IMPATIENT_UPRIGHT", 0, 0)
         SetModelAsNoLongerNeeded(lmodel)
     end
 end
