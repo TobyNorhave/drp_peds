@@ -1,5 +1,5 @@
 # DRP-Peds - A personal touch of life, inside the shops.
-A ped extention for DRP-Framwork by <a href="https://github.com/OfficialDarkzy" target="_blank">**OfficialDarkzy**</a>!
+A ped extention for the DRP-Framwork by <a href="https://github.com/OfficialDarkzy" target="_blank">**OfficialDarkzy**</a>!
 
 Go to a store, and see it's not empty!! - That's something.. 😮  
 
